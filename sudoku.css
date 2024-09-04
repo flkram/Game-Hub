@@ -1,0 +1,128 @@
+body {
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: #ffd700;
+}
+
+.box {
+    height: 156px;
+    width: 156px;
+    border: 2px solid #fff;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+#main {
+    height: 500px;
+    width: 500px;
+    border: 5px solid #ffd700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3e3e4e;
+}
+
+.cell {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffd700;
+    text-align: center;
+    background-color: #2c2c3c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+input {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #3e3e4e;
+    color: #ffd700;
+    border-radius: 5px;
+}
+
+button {
+    height: 70px;
+    width: 220px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #006400;
+    border: 3px solid #003300;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #228b22;
+}
+
+#start {
+    top: 25%;
+    left: 10%;
+}
+
+#replay {
+    top: 45%;
+    left: 10%;
+}
+
+#answer {
+    top: 65%;
+    left: 10%;
+}
+
+#game_type {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    font-size: 1.2rem;
+}
+
+.label {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#help {
+    left: 5%;
+    top: 200%;
+}
+
+#lives {
+    position: absolute;
+    top: 13%;
+    left: 72%;
+    color: orangered;
+    font-weight: bold;
+    font-size: large;
+}
+
+#timer {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-size: large;
+    color: #fff;
+    font-weight: bold;
+}
