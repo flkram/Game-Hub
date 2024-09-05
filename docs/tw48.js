@@ -62,6 +62,9 @@ function startNewGame() {
   addRandomTile();
 }
 
+function goBack(){
+  window.location.href = '/game-hub';
+}
 function continuePlaying() {
   alert.style.display="none";
   window.addEventListener("keydown",onDirectionKeyPress);

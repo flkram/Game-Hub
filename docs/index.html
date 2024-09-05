@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Project Links</title>
+    <title>Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,34 +12,117 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: top;
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-image: url('bg.gif'); /* Path to animated GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         h1 {
-            margin-bottom: 20px;
+            font-family: 'Honk', sans-serif; 
+            font-size: 6em;   
+        }
+        
+        h2 {
+            font-family: 'Honk', sans-serif;
+            font-size: 3em;  
         }
 
-        a {
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 200px); 
+            gap: 50px; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px; 
+            height: 200px; 
+            color: #000000;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
             text-decoration: none;
-            color: #3498db;
-            margin: 10px 0;
-            font-size: 1.2em;
-            transition: color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-size: contain; 
+            background-position: center; 
+            background-repeat: no-repeat; 
         }
 
-        a:hover {
-            color: #2c3e50;
+        .button:hover {
+            background-color: #2c3e50;
+            transform: scale(1.15);
+        }
+
+        .button:active {
+            background-color: #1a242f;
+        }
+
+        /* inheriting from .button */
+        .buttonFlappyBird {
+            background-color: transparent;
+            position: relative; 
+            background-image: url('flappybird.png');
+        }
+
+        .buttonDoodleJump {
+            background-color: transparent; 
+            position: relative;  
+            background-image: url('doodler-right.png');
+        }
+
+        .button2048 {
+            background-color: transparent; 
+            position: relative; 
+            background-image: url('2048.png');
+            background-size: 70% 70%; 
+        }
+
+        .buttonTetris {
+            background-color: transparent; 
+            position: relative; 
+            background-image: url('tetris.png')
         }
     </style>
 </head>
 <body>
-    <h1>React Project Links</h1>
-    <a href="tw48.html">Play 2048</a>
-    <a href="sudoku.html">Play Sudoku</a>
-    <a href="doodlejump.html">Play Doodle Jump</a>
-    <a href="tetris.html">Play Tetris</a>
+    <h1>Game Hub</h1>
+    <h2 id="header-text">Select a game to play!</h2>
+    <div class="button-container">
+        <a href="flappybird.html" class="button buttonFlappyBird" data-hover-text="Play Flappy Bird"></a>
+        <a href="doodlejump.html" class="button buttonDoodleJump" data-hover-text="Play Doodle Jump"></a>
+        <a href="tw48.html" class="button button2048" data-hover-text="Play 2048"></a>
+        <a href="tetris.html" class="button buttonTetris" data-hover-text="Play Tetris"></a>
+    </div>
+    <h2>By Akash Ramaswamy</h2>
+
+    <script>
+        const headerText = document.getElementById('header-text');
+
+        function changeHeaderText(event) {
+            headerText.textContent = event.target.getAttribute('data-hover-text');
+        }
+
+        function resetHeaderText() {
+            headerText.textContent = 'Select a game to play!';
+        }
+
+        const buttons = document.querySelectorAll('.button');
+
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', changeHeaderText);
+            button.addEventListener('mouseout', resetHeaderText);
+        });
+    </script>
 </body>
 </html>

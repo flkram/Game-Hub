@@ -236,7 +236,11 @@ body{
       font-size: 25px;
     }
     h1 {
-      font-size: 40px;
+    font: 'Honk', sans-serif; 
+    font-weight: 700; /* Bold weight */
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
     }
     button {
       width: 100px;
@@ -268,3 +272,17 @@ body{
     position: absolute;
     z-index: 3;
   }
+
+  .dir {
+    font-size:40px;
+    font-weight: bold;
+    color: rgb(119, 110, 101);
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    right: 0;
+    text-align: left;
+    margin: 10px 0 0;
+    white-space: normal; /* Allow text to wrap */
+    max-width: 300px;
+}

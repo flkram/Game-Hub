@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Honk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie:wght@400;700&display=swap" rel="stylesheet">
     <title>2048</title>
     <link rel="stylesheet" href="tw48.css" />
   </head>
 
   <body>
-   
+    <p id="directions" class="dir">Directions: Use the spacebar to make the bird flap and navigate through the pipes.</p>
     <div class="container">
       <div id="alert"></div>
       <div class="board">
@@ -42,6 +44,9 @@
       </div>
       <div>
         <button class="newGame" onclick="startNewGame()">New Game</button>
+      </div>
+      <div>
+        <button class="backButton" onclick="goBack()">Back</button>
       </div>
     </div>
    

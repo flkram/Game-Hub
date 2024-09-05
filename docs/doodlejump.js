@@ -60,6 +60,9 @@ window.onload = function() {
     placePlatforms();
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveDoodler);
+    document.getElementById('back-button').addEventListener('click', function() {
+        window.location.href = '/game-hub'; // Go back to the /game page
+    });
 }
 
 function update() {
