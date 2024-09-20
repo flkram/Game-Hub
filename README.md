@@ -19,6 +19,8 @@ Visit the live site [here](https://your-github-username.github.io/game-hub) to p
 
 ## Technologies Used
 
-- **ReactJS**: For building the dynamic UI components.
+- **ReactJS**: To create the dynamic UI components.
+- **Django**: To handle user authentication, data, and connect to database.
+- **MySQL**: To store user data.
 - **Bootstrap**: For responsive and consistent styling across all pages.
 - **GitHub Pages**: For hosting and deploying the project online.
