@@ -8,7 +8,7 @@ Welcome to **Game Hub**, a collection of 4 classic games, all playable directly 
 
 ## How to Play
 
-Visit the live site [here](https://your-github-username.github.io/game-hub) to play any of the games. Use your keyboard or mouse to interact with the games and have fun!
+Visit the live site [here](https://flkram.github.io/game-hub/) to play any of the games. Use your keyboard or mouse to interact with the games and have fun!
 
 ## Games Included
 
