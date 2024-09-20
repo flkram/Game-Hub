@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Honk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie:wght@400;700&display=swap" rel="stylesheet">
+    <title>2048</title>
+    <link rel="stylesheet" href="tw48.css" />
+  </head>
+
+  <body>
+    <p id="directions" class="dir">Directions: Use the arrow keys to combine and double numbers. Reach 2048 before occupying all 16 squares.</p>
+    <div class="container">
+      <div id="alert"></div>
+      <div class="board">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="tileContainer"></div>
+    </div>
+    <div class="elementContainer">
+      <div class="title">
+        <h1>2048</h1>
+      </div>
+      <div class="scoreElementContainer">
+        <div id="scoreLabel">Score</div>
+        <div id="scoreElement">0</div>
+      </div>
+      <div>
+        <button class="newGame" onclick="startNewGame()">New Game</button>
+      </div>
+      <div>
+        <button class="backButton" onclick="goBack()">Back</button>
+      </div>
+    </div>
+   
+    <script src="tw48.js"></script>
+  </body>
+</html>
